@@ -1,0 +1,19 @@
+{
+  "name": "web-components",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Web components useful for creating interactive course materials",
+  "main": "index.js",
+  "scripts": {
+    "test": "vite test",
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "lit": "^2.8.0"
+  }
+}
