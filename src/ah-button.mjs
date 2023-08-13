@@ -1,5 +1,5 @@
-import {LitElement, html, css} from 'lit';
-
+import {LitElement, html, unsafeCSS} from 'lit';
+import style from './ah-button.scss?inline';
 
 export class AhButton extends LitElement {
   static properties = {
@@ -7,20 +7,13 @@ export class AhButton extends LitElement {
     primary: {type: Boolean},
   };
 
-  static styles = css`
-    a {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 15em;
-      display: block;
-      text-align: center;
-    }
-  `;
+  static styles = unsafeCSS`${style}`;
 
   constructor() {
     super();
     this.href = "#";
     this.primary = false;
+    console.log(style);
   }
 
   render() {
@@ -29,7 +22,6 @@ export class AhButton extends LitElement {
       isPrimary = "ah-button--primary";
     }
     return html`
-      <link rel="stylesheet" href="https://insper.github.io/tecnicas-de-programacao/assets/css/main.css">
       <div>
         <a href="${this.href}" class="ah-button ${isPrimary}"><slot></slot></a>
       </div>

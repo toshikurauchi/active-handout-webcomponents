@@ -1,5 +1,6 @@
-import {LitElement, html, css, unsafeSVG} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+import {LitElement, html, css} from 'lit';
+import {unsafeSVG} from 'lit/directives/unsafe-svg.js';
+import mermaid from 'mermaid';
 
 mermaid.initialize({ startOnLoad: false });
 

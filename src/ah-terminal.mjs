@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
+import {LitElement, html, css} from 'lit';
 
 export class AhTerminal extends LitElement {
   static properties = {

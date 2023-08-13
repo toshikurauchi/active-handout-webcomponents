@@ -3,17 +3,20 @@
   "type": "module",
   "version": "0.1.0",
   "description": "Web components useful for creating interactive course materials",
-  "main": "index.js",
+  "main": "dist/ah-components.js",
   "scripts": {
+    "build": "vite build",
     "test": "vite test",
     "dev": "vite"
   },
-  "author": "",
+  "author": "Igor Montagner",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.65.1",
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "lit": "^2.8.0"
+    "lit": "^2.8.0",
+    "mermaid": "^10.3.1"
   }
 }
