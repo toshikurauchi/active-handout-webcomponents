@@ -5,7 +5,7 @@
   "description": "Web components useful for creating interactive course materials",
   "main": "dist/ah-components.js",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && sass src/themes/ dist/",
     "test": "vite test",
     "dev": "vite"
   },

@@ -1,8 +1,16 @@
 :host {
   display: block;
+  
+  --btn-background-color: transparent;
+  --btn-background-hover-color: transparent;
+  --btn-border-color: var(--clr-btn);
+  --btn-border-hover-color: var(--clr-btn-hover);
+  --btn-text-color: var(--clr-btn-text);
+  --btn-text-hover-color: var(--clr-btn-text-hover);
+
 }
 
-.ah-button {
+a.ah-button {
   margin-left: auto;
   margin-right: auto;
   max-width: 15em;
@@ -14,16 +22,7 @@
 
   padding: 0.2em 0.6em;
 
-  border: 1px solid var(--btn-border-color, black);
-
-
-	/*
-  --btn-background-color: transparent;
-  --btn-background-hover-color: transparent;
-  --btn-border-color: var(--clr-btn);
-  --btn-border-hover-color: var(--clr-btn-hover);
-  --btn-text-color: var(--clr-btn-text);
-  --btn-text-hover-color: var(--clr-btn-text-hover);
+  border: 1px solid var(--btn-border-color);
 
   background: var(--btn-background-color);
   color: var(--btn-text-color);
@@ -72,5 +71,4 @@
   &--right {
     justify-content: flex-end;
   }
-  */
 }

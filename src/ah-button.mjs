@@ -7,13 +7,12 @@ export class AhButton extends LitElement {
     primary: {type: Boolean},
   };
 
-  static styles = unsafeCSS`${style}`;
+  static styles = unsafeCSS(style);
 
   constructor() {
     super();
     this.href = "#";
     this.primary = false;
-    console.log(style);
   }
 
   render() {
