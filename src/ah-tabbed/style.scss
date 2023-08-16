@@ -1,0 +1,71 @@
+$border-width: 1px;
+
+:host {
+  display: block;
+  max-width: 100%;
+
+  --tabbed-background-color: var(--clr-background-secondary);
+  --tabbed-border-color: var(--clr-border-secondary);
+  --tabbed-background-color-inactive: var(--clr-background-disabled);
+  --tabbed-border-color-inactive: var(--clr-border-disabled);
+  --block-padding: var(--default-block-padding, 0.5rem);
+  --inline-padding: var(--default-inline-padding, 0.8rem);
+  --border-radius: 0.2em;
+  --top-margin: var(--default-top-margin, 0);
+}
+
+.ah-tabbed {
+  display: grid;
+  margin: var(--top-margin) 0;
+  isolation: isolate;
+}
+
+// LABELS
+.ah-tabbed-labels {
+  display: flex;
+  gap: 0.2rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+::slotted(.ah-tabbed-label) {
+  border: $border-width solid var(--tabbed-border-color-inactive);
+  color: var(--clr-text);
+  border-bottom: none;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  background-color: var(--tabbed-background-color-inactive);
+  padding: var(--block-padding) var(--inline-padding)
+    calc(var(--block-padding) + $border-width);
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+::slotted(.ah-tabbed-label.active) {
+  background-color: var(--tabbed-background-color);
+  border-color: var(--tabbed-border-color);
+  z-index: 999;
+  cursor: default;
+}
+
+// CONTENTS
+.ah-tabbed-contents {
+  display: flex;
+  margin-top: -$border-width;
+  border: 1px solid var(--tabbed-border-color);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  background-color: var(--tabbed-background-color);
+  padding: var(--block-padding) var(--inline-padding);
+  overflow: auto;
+
+  &--wider-than-labels {
+    border-top-right-radius: var(--border-radius);
+  }
+}
+
+::slotted(.ah-tabbed-content) {
+  display: none;
+}
+
+::slotted(.ah-tabbed-content.active) {
+  display: block;
+}

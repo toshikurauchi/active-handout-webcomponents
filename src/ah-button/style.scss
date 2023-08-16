@@ -1,13 +1,12 @@
 :host {
   display: block;
-  
+
   --btn-background-color: transparent;
   --btn-background-hover-color: transparent;
   --btn-border-color: var(--clr-btn);
   --btn-border-hover-color: var(--clr-btn-hover);
   --btn-text-color: var(--clr-btn-text);
   --btn-text-hover-color: var(--clr-btn-text-hover);
-
 }
 
 a.ah-button {
