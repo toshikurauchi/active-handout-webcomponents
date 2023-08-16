@@ -1,6 +1,11 @@
-* {
+:root {
   --clr-btn-text: white;
   --clr-btn: black;
-}
 
-/*# sourceMappingURL=light.css.map */
+  /* Tabbed component */
+  --clr-text: black;
+  --clr-background-secondary: hsl(213, 100%, 98%);
+  --clr-border-secondary: hsl(213, 100%, 82%);
+  --clr-background-disabled: hsl(213, 0%, 97%);
+  --clr-border-disabled: hsl(213, 0%, 87%);
+}
