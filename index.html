@@ -28,5 +28,37 @@ output here
 	<div slot="content">Tab3 content</div>
 </ah-tabbed>
 
+<ah-admonition title="Admonitions">
+	You can have admonitions with your default theme
+</ah-admonition>
+
+<ah-admonition type="note" title="Note Admonition">
+	You can create different types of box:
+
+	- note, example, warning, info, tip, danger
+
+	You only need to change `!!! TYPE`
+</ah-admonition>
+
+<ah-admonition type="example" title="Modify the title">
+	It is possible to modify the box title.
+
+	<ah-admonition type="warning" title="Nested admonitions">
+		A box inside a box is also possible.
+	</ah-admonition>
+</ah-admonition>
+
+<ah-admonition type="danger">
+	This is a box without title.
+</ah-admonition>
+
+<ah-admonition type="info" title="Collapse this" collapsible>
+	Collapsible boxes are also possible.
+</ah-admonition>
+
+<ah-admonition type="example" title="Can start collapsed" collapsible collapsed>
+	Will show only when user wants.
+</ah-admonition>
+
 <script src="//cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>

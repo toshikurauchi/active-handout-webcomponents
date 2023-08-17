@@ -8,4 +8,5 @@
   --clr-border-secondary: hsl(213, 100%, 82%);
   --clr-background-disabled: hsl(213, 0%, 97%);
   --clr-border-disabled: hsl(213, 0%, 87%);
+  --default-top-margin: 2rem;
 }
