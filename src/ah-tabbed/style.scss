@@ -55,7 +55,7 @@ $border-width: 1px;
   border: 1px solid var(--tabbed-border-color);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   background-color: var(--tabbed-background-color);
-  padding: var(--block-padding) var(--inline-padding);
+  padding: calc(2 * var(--block-padding)) var(--inline-padding);
   overflow: auto;
 
   &--wider-than-labels {
