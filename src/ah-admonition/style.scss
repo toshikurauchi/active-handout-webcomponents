@@ -29,8 +29,14 @@
   }
 }
 
-details:not(open) .ah-admonition-title {
-  border-bottom: none;
+details {
+  summary {
+    cursor: pointer;
+  }
+
+  &:not(open) .ah-admonition-title {
+    border-bottom: none;
+  }
 }
 
 // ----------------------------------------------------------------------------

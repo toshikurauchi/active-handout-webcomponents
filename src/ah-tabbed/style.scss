@@ -1,3 +1,4 @@
+$label-block-padding: 0.2em;
 $border-width: 1px;
 
 :host {
@@ -34,8 +35,8 @@ $border-width: 1px;
   border-bottom: none;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   background-color: var(--tabbed-background-color-inactive);
-  padding: var(--block-padding) var(--inline-padding)
-    calc(var(--block-padding) + $border-width);
+  padding: $label-block-padding var(--inline-padding)
+    calc($label-block-padding + $border-width);
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
 }
@@ -64,6 +65,7 @@ $border-width: 1px;
 
 ::slotted(.ah-tabbed-content) {
   display: none;
+  max-width: 100%;
 }
 
 ::slotted(.ah-tabbed-content.active) {
