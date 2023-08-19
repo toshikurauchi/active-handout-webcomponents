@@ -1,5 +1,5 @@
 {
-  "name": "web-components",
+  "name": "@insperedu/active-handout-webcomponents",
   "type": "module",
   "version": "0.1.0",
   "description": "Web components useful for creating interactive course materials",
